@@ -1,0 +1,33 @@
+/* Styling for the Card component */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* background-color: #95dada; */
+    background-color: rgb(92, 92, 92);
+    /* background-color: rgb(238, 238, 232); */
+    /* border: 1px solid grey; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 25px;
+    width: 220px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    /* transition: transform 0.25s ease-out; */
+    transition: all 0.25s ease-out;
+}
+
+.card-container:hover {
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: .1rem .2rem .7rem rgba(0, 0, 0, .2);
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.card-container:active {
+    transform: scale(1.025);
+    box-shadow: .1rem .15rem .5rem rgba(0, 0, 0, .2);
+}
